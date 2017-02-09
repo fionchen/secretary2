@@ -129,7 +129,23 @@ def money_excel(request, month):
         xlsx_data = output.getvalue()
         response.write(xlsx_data)
         return response
+
+def index(request):
+  return render_to_response('index.html')      
       
+def pasta(request):
+  return render_to_response('pasta.html')      
+      
+def pizza(request):
+  return render_to_response('pizza.html')
+
+def drink(request):
+  return render_to_response('drink.html')
+
+def dessert(request):
+  return render_to_response('dessert.html')
+  
+  
 # 使用者登入功能
 def user_login(request):
         message = ""

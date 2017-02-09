@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!--
+Template Name: Vendor
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html>
+<head>
+<title>我的隨身秘書</title>
+<meta charset="utf-8">
+<link href="/static/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <header id="header" class="clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo">
+      <h1><a href="/home">FION的隨身秘書</a></h1>
+      <p>life will be different...</p>
+    </div>
+    <nav id="mainav">
+      <ul class="clear">
+         {% if user.is_authenticated %}
+           <li><a href="/home">首頁</a></li>
+           <li><a href="/diary/add">寫日誌</a></li>
+           <li><a href="/money/add">記帳</a></li>
+           <li><a href="/logout">登出</a></li>
+         {% endif %}
+      </ul>
+    </nav>
+    <!-- ################################################################################################ --> 
+  </header>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row2">
+  <div id="breadcrumb"> 
+    <!-- ############################################################################################################# -->
+    <ul>
+      welcome to my place
+    </ul>
+    <!-- ############################################################################################################# --> 
+  </div>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+        {% block content %}
+        {% endblock %}
+            </div>
+          </article>
+        </li>
+        <li>
+          <article>
+            <header>
+              <figure class="avatar"><img src="../images/demo/avatar.png" alt=""></figure>
+              <address>
+              By <a href="#">A Name</a>
+              </address>
+              <time datetime="2000-04-06T08:15+00:00">Friday, 6<sup>th</sup> April 2000 @08:15:00</time>
+            </header>
+            <div class="comcont">
+              <p>This is an example of a comment made on a post. You can either edit the comment, delete the comment or reply to the comment. Use this as a place to respond to the post or to share what you are thinking.</p>
+            </div>
+          </article>
+        </li>
+      </ul>
+      <h2>Write A Comment</h2>
+      <form action="#" method="post">
+        <div class="one_third first">
+          <label for="name">Name <span>*</span></label>
+          <input type="text" name="name" id="name" value="" size="22">
+        </div>
+        <div class="one_third">
+          <label for="email">Mail <span>*</span></label>
+          <input type="text" name="email" id="email" value="" size="22">
+        </div>
+        <div class="one_third">
+          <label for="url">Website</label>
+          <input type="text" name="url" id="url" value="" size="22">
+        </div>
+        <div class="clear">
+          <label for="comment">Your Comment</label>
+          <textarea name="comment" id="comment" cols="25" rows="10"></textarea>
+        </div>
+        <div>
+          <input name="submit" type="submit" value="Submit Form">
+          &nbsp;
+          <input name="reset" type="reset" value="Reset Form">
+        </div>
+      </form>
+    </div>
+    <!-- ########################################################################################## --> 
+    <!-- / container body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row4">
+  <footer id="footer" class="clear"> 
+    <!-- ################################################################################################ -->
+    <div class="one_third first">
+      <h6 class="title">Lorem ipsum dolor</h6>
+      <address class="push30">
+      Company Name<br>
+      Street Name &amp; Number<br>
+      Town<br>
+      Postcode/Zip
+      </address>
+      <ul class="nospace">
+        <li class="push10"><span class="icon-time"></span> Mon. - Fri. 9:00am - 7:00pm</li>
+        <li class="push10"><span class="icon-phone"></span> +00 (123) 456 7890</li>
+        <li><span class="icon-envelope-alt"></span> info@domain.com</li>
+      </ul>
+    </div>
+    <div class="one_third">
+      <h6 class="title">Lorem ipsum dolor</h6>
+      <ul class="nospace clear">
+        <li class="clear push30">
+          <div class="imgl"><img class="rounded" src="../images/demo/80x80.gif" alt=""></div>
+          <p class="nospace push15">Integer imperdiet vestibulum leo ut tincidunt in sagittis.</p>
+          <p class="nospace"><a href="#">Read more &raquo;</a></p>
+        </li>
+        <li class="clear">
+          <div class="imgl"><img class="rounded" src="../images/demo/80x80.gif" alt=""></div>
+          <p class="nospace push15">Integer imperdiet vestibulum leo ut tincidunt in sagittis.</p>
+          <p class="nospace"><a href="#">Read more &raquo;</a></p>
+        </li>
+      </ul>
+    </div>
+    <div class="one_third">
+      <h6 class="title">Lorem ipsum dolor</h6>
+      <ul class="nospace clear ftgal">
+        <li class="one_third first"><a href="#"><img class="rounded" src="../images/demo/100x100.gif" alt=""></a></li>
+        <li class="one_third"><a href="#"><img class="rounded" src="../images/demo/100x100.gif" alt=""></a></li>
+        <li class="one_third"><a href="#"><img class="rounded" src="../images/demo/100x100.gif" alt=""></a></li>
+        <li class="one_third first"><a href="#"><img class="rounded" src="../images/demo/100x100.gif" alt=""></a></li>
+        <li class="one_third"><a href="#"><img class="rounded" src="../images/demo/100x100.gif" alt=""></a></li>
+        <li class="one_third"><a href="#"><img class="rounded" src="../images/demo/100x100.gif" alt=""></a></li>
+      </ul>
+    </div>
+    <!-- ################################################################################################ --> 
+  </footer>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2014 - All Rights Reserved - <a href="#">Domain Name</a></p>
+    <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+    <!-- ################################################################################################ --> 
+  </div>
+</div>
+</body>
+</html>

@@ -29,4 +29,9 @@ urlpatterns = [
      url(r'^money/excel/(?P<month>\d+)/$', views.money_excel),
      url(r'^$', views.user_login),
      url(r'^logout/$',auth_views.logout),
+     url(r'^index/$', views.index),
+     url(r'^pasta/$', views.pasta),
+     url(r'^pizza/$', views.pizza),
+     url(r'^drink/$', views.drink),
+     url(r'^dessert/$', views.dessert),
 ]
