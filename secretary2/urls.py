@@ -34,4 +34,5 @@ urlpatterns = [
      url(r'^pizza/$', views.pizza),
      url(r'^drink/$', views.drink),
      url(r'^dessert/$', views.dessert),
+     url(r'^contact_us/$', views.contact_us),
 ]

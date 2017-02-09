@@ -144,6 +144,9 @@ def drink(request):
 
 def dessert(request):
   return render_to_response('dessert.html')
+
+def contact_us(request):
+  return render_to_response('contact_us.html')
   
   
 # 使用者登入功能
